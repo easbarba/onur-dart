@@ -1,0 +1,22 @@
+name: tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: registry.gitlab.com/easbarba/onur-dart:0.1.0
+    #   env:
+    #     HOME: /home/easbarba/app
+    defaults:
+      run:
+        working-directory: /home/easbarba/app
+
+    steps:
+      - name: integration tests
+        run: dart test

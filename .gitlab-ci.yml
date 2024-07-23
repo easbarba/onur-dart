@@ -1,0 +1,16 @@
+image: registry.gitlab.com/easbarba/onur-dart:0.1.0
+
+stages:
+  - test
+
+# cache:
+#   paths:
+#     - .m2/repository
+
+before_script:
+  - ./prepare.bash
+
+Integration Tests:
+  stage: test
+  script:
+    - dart test

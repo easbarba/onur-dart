@@ -1,0 +1,8 @@
+pub outdated
+pub upgrade --major-versions
+pub get
+pub global activate onur
+
+run
+
+compile exe bin/main.dart -o bin/main

@@ -1,0 +1,37 @@
+# https://dart.dev/guides/libraries/private-files
+# Dart package
+.dart_tool/
+.packages
+build/
+pubspec.lock
+
+# IDEs and editors
+.idea/
+.project
+.settings/
+*.iml
+
+# VS Code
+.vscode/
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# JetBrains Rider
+.idea/
+*.sln
+*.csproj
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
