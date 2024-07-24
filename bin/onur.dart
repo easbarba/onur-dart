@@ -1,8 +1,8 @@
 import 'package:args/args.dart';
 
-// import 'package:onur/onur.dart' as onur;
+import 'package:onur/parse.dart';
 
-void main(List<String> arguments) {
+void main(List<String> arguments) async {
   var parser = ArgParser();
   parser.addCommand('grab');
   parser.addCommand('backup');
@@ -22,7 +22,7 @@ void main(List<String> arguments) {
   }
 
   if (results.command?.name == "grab") {
-    print('grabbing');
+    await Parse().multi();
   }
 
   if (results.command?.name == "backup") {
